@@ -1,0 +1,23 @@
+ru:
+  model:
+    errors:
+      user:
+        name:
+          blank: пустое имя
+          format: Укажите имя, используя буквы, цифры или символ подчёркивания
+        email:
+          blank: пустой email
+        password:
+          blank: пустой пароль
+
+      user_session:
+        uuid:
+          blank: пустой uuid
+
+  services:
+    user_sessions:
+      create_service:
+        unauthorized: 'Сессия не может быть создана'
+    auth:
+      fetch_user_service:
+        forbidden: Доступ к ресурсу ограничен

@@ -10,9 +10,6 @@ gem 'sinatra-contrib'
 gem 'config'
 gem 'puma'
 
-gem 'pg'
-gem 'sequel'
-
 gem 'dry-initializer'
 gem 'dry-validation'
 
