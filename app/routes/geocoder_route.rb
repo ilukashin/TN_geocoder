@@ -1,10 +1,10 @@
 class GeocoderRoutes < Application
 
-  post do
-    coordinates = Geocoder.geocode(ad.city)
+  post '/' do
+    coordinates = Geocoder.geocode(params['city'])
 
     if coordinates.blank?
-      status 401
+      status 204
       {}.to_json
     else
       status 200

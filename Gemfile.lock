@@ -68,7 +68,6 @@ GEM
     parallel (1.20.1)
     parser (3.0.0.0)
       ast (~> 2.4.1)
-    pg (1.2.3)
     puma (5.2.2)
       nio4r (~> 2.0)
     rack (2.2.3)
@@ -142,13 +141,11 @@ DEPENDENCIES
   fast_jsonapi
   i18n
   jwt
-  pg
   puma
   rack-test
   rake
   rspec
   rubocop
-  sequel
   sequel-seed
   sinatra
   sinatra-contrib
