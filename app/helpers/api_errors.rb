@@ -13,7 +13,6 @@ module ApiErrors
     end
   end
 
-
   error Validations::InvalidParams, KeyError do
     status 422
     error_response I18n.t(:missing_parameters, scope: 'api.errors')

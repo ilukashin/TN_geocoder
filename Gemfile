@@ -17,14 +17,11 @@ gem 'rake'
 
 gem 'activesupport', require: false
 gem 'fast_jsonapi'
-gem 'i18n'
-gem 'jwt'
 
 group :development do
   gem 'byebug'
   gem 'rubocop', require: false
   gem 'sinatra-reloader'
-  gem 'sequel-seed'
 end
 
 group :test do

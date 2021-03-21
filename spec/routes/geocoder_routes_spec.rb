@@ -1,11 +1,12 @@
-RSpec.describe GeocoderRoutes, type: :routes do
+# frozen_string_literal: true
 
+RSpec.describe GeocoderRoutes, type: :routes do
   describe 'valid city' do
     it 'returns coordinates' do
       post '/', city: 'City 17'
 
       expect(last_response.status).to eq(200)
-      expect(last_response.body).to eq("[45.05,90.05]")
+      expect(last_response.body).to eq('[45.05,90.05]')
     end
   end
 
@@ -17,5 +18,4 @@ RSpec.describe GeocoderRoutes, type: :routes do
       expect(last_response.body).to be_blank
     end
   end
-  
 end

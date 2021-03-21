@@ -1,5 +1,6 @@
-class GeocoderRoutes < Application
+# frozen_string_literal: true
 
+class GeocoderRoutes < Application
   post '/' do
     coordinates = Geocoder.geocode(params['city'])
 
