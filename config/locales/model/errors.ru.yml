@@ -1,0 +1,14 @@
+ru:
+  model:
+    errors:
+      user:
+        name:
+          blank:
+        email:
+          blank:
+        password:
+          blank:
+
+      user_session:
+        uuid:
+          blank:
