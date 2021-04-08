@@ -11,6 +11,7 @@ gem 'dry-validation'
 
 gem 'bunny'
 gem 'rake'
+gem 'ougai'
 
 gem 'activesupport', require: false
 gem 'fast_jsonapi'

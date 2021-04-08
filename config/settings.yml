@@ -2,4 +2,10 @@ rabbitmq:
   consumer_pool: 10
   
 app:
+  name: geocoder
   secret: secret
+
+
+logger:
+  path: log/app.log
+  level: info
