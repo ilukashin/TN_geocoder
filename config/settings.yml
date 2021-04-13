@@ -1,4 +1,7 @@
 rabbitmq:
+  host: <%= ENV['RABBITMQ_HOST']%>
+  username: <%= ENV['RABBITMQ_USER']%>
+  password: <%= ENV['RABBITMQ_PASSWORD']%>
   consumer_pool: 10
   
 app:
