@@ -24,7 +24,7 @@
         source: local
     - name: compress image
       delegate_to: 127.0.0.1
-      archieve:
+      archive:
         path: '{{ image }}.tar'
         dest: '{{ image }}.tar.gz'
         remove: yes
@@ -39,14 +39,14 @@
     - name: load image
       become: yes
       docker_image:
-        name: ads
+        name: geocoder
         load_path: '/tmp/{{ timestamp }}-{{ image }}.tar'
         source: load    
     - name: remove image file
       become: yes
       file:
         path: '/tmp/{{ timestamp }}-{{ image }}.tar'
-        source: absent
+        state: absent
     - name: start geocodder container
       become: yes
       docker_container:
