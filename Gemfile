@@ -19,6 +19,7 @@ gem 'activesupport', require: false
 gem 'fast_jsonapi'
 
 gem 'prometheus-client'
+gem 'benchmark'
 
 gem 'byebug'
 gem 'rubocop', require: false
