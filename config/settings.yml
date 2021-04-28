@@ -1,5 +1,14 @@
 rabbitmq:
+  host: <%= ENV['RABBITMQ_HOST']%>
+  username: <%= ENV['RABBITMQ_USER']%>
+  password: <%= ENV['RABBITMQ_PASSWORD']%>
   consumer_pool: 10
   
 app:
+  name: geocoder
   secret: secret
+
+
+logger:
+  path: log/app.log
+  level: info
